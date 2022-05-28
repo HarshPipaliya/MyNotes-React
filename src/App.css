@@ -1,3 +1,9 @@
+* {
+  /* font-family: 'Satisfy', cursive; */
+  font-family: 'Lato', sans-serif;
+}
+
+
 .App {
   text-align: center;
 }
@@ -32,7 +38,107 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+
+
+#iconDelete {
+  position: absolute;
+  right: 50px;
+  top: 7px;
+  font-size: 25px;
+}
+
+#iconEdit {
+  position: absolute;
+  right: 6px;
+  top: 7px;
+  font-size: 25px;
+}
+
+
+#login {
+  display: block;
+  width: 30%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 60px 60px;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f8f8f8;
+}
+
+#signup {
+  display: block;
+  width: 30%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 40px 30px;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f8f8f8;
+}
+
+#user {
+  cursor: pointer;
+  color: white;
+  margin: 8px;
+  font-size: 30px;
+}
+
+
+@media screen and (max-width: 990px) {
+  #user {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #login {
+    width: 90%;
+    padding: 60px 23px;
+  }
+
+  #signup {
+    width: 90%;
+    padding: 40px 18px;
+    top: 41%;
+  }
+
+  #signup h1 {
+    font-size: 21;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  #login {
+    width: 50%;
+  }
+
+  #signup {
+    width: 50%;
+    top: 45%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  #login {
+    width: 70%;
+  }
+
+  #signup {
+    top: 45%;
+    width: 70%;
   }
 }
